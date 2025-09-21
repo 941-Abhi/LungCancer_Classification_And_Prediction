@@ -38,7 +38,7 @@ Descriptive analysis:
 3. Data Quality and Inspection : the code for the "Data Quality and Inspection" analysis you described. This script covers visual inspection, checking for duplicates, and finding potential outliers.
  3.1 Visual Inspection :  randomly samples and displays a few images from each class. This is a great way to manually spot mislabeled or corrupted images.
  3.2  Duplicate Images : To check for duplicates, you'll use an image hashing technique. First, you need to install the imagehash library. Open your Anaconda Prompt and run: pip install imagehash.
-3.3  Outlier Images : 
+3.3  Outlier Plot : 
 This code identifies potential outliers by calculating the average pixel intensity (brightness) of all images and flagging those that are significantly brighter or darker than the average.
 
 4. Display Sample Images :
