@@ -1,3 +1,44 @@
+We've used several key Python libraries for your lung cancer classification project. Here's a summary of the libraries and their purpose:
+
+For Machine Learning and Deep Learning
+TensorFlow: The primary open-source platform for machine learning.
+
+Keras: A high-level API that simplifies building and training deep learning models. It runs on top of TensorFlow.
+
+Scikit-learn: A popular library for traditional machine learning tasks. We used it for model evaluation metrics like the confusion matrix and classification report.
+
+For Data Handling and Visualization
+NumPy: The fundamental library for numerical computing in Python. It's used to work with arrays and matrices, which are how images are represented.
+
+Matplotlib: A plotting library used to create charts and graphs, such as the bar chart for class distribution and plots for model history.
+
+Pillow (PIL): An image processing library. We used it to open, handle, and manipulate image files.
+
+OpenCV: A computer vision library used for more advanced image processing tasks.
+
+For System Operations
+os: A built-in Python module for interacting with the operating system. We used it to manage file paths and directories for your dataset.
+
+Random: A built-in Python module for generating random numbers. We used it for randomly sampling images.
+
 Found 613 images belonging to 4 classes.
 Found 72 images belonging to 4 classes.
 Found 315 images belonging to 4 classes.
+
+
+Descriptive analysis:
+1. Class Distribution Analysis : This script will count the images in each class and then visualize the results with a bar chart
+
+2. Image-Specific Analysis :  
+ 2.1 Image Dimensions and Distribution
+ This code checks all images in your training set to see if they are the same size. If they're not, it will show you the distribution of different image sizes.
+ 2.2 Average Image and Pixel-Level Analysis
+ This code calculates the average image for each class and also generates a pixel intensity histogram to check for consistent brightness.
+
+3. Data Quality and Inspection : the code for the "Data Quality and Inspection" analysis you described. This script covers visual inspection, checking for duplicates, and finding potential outliers.
+ 3.1 Visual Inspection :  randomly samples and displays a few images from each class. This is a great way to manually spot mislabeled or corrupted images.
+ 3.2  Duplicate Images : To check for duplicates, you'll use an image hashing technique. First, you need to install the imagehash library. Open your Anaconda Prompt and run: pip install imagehash.
+3.3  Outlier Images : 
+This code identifies potential outliers by calculating the average pixel intensity (brightness) of all images and flagging those that are significantly brighter or darker than the average.
+
+4. Display Sample Images :
