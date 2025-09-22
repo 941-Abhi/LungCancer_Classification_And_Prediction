@@ -19,7 +19,7 @@ The dataset used is a comprehensive collection of high-resolution CT scan images
 - **Testing Set:** 315 images  
 - **Validation Set:** 72 images  
 
-🔗 Source: [Mendeley Dataset](https://data.mendeley.com/datasets/bncfhxbzrv/1)
+🔗 Source: https://data.mendeley.com/datasets/bncfhxbzrv/1
 
 ---
 
@@ -40,65 +40,58 @@ Install the following libraries:
 
 1. **Clone the Repository** (if applicable):
 
-```bash
-git clone [your-repository-url]
-cd [your-project-directory]
+    git clone [your-repository-url]  
+    cd [your-project-directory]  
 
-Create the Anaconda Environment
-An environment.yml file is provided to install all dependencies.
+2. **Create the Anaconda Environment**  
+   An `environment.yml` file is provided to install all dependencies.
 
-conda env create -f environment.yml
+    conda env create -f environment.yml  
 
+3. **Activate the Environment**
 
-Activate the Environment
+    conda activate LungCancer_Classification_And_Prediction  
 
-conda activate LungCancer_Classification_And_Prediction
+4. **Download the Dataset**  
+   Download and unzip the dataset from the Mendeley link above.  
+   Place the unzipped `Data` folder inside your project directory.
 
+---
 
-Download the Dataset
-Download and unzip the dataset from the Mendeley link above.
-Place the unzipped Data folder inside your project directory.
-
-📁 File Structure
+## 📁 File Structure
 .
-├── Data/
-│   ├── train/
-│   ├── test/
-│   └── valid/
-├── DHAI.ipynb
-├── main.py
-├── environment.yml
-└── README.md
+├── Data/  
+│   ├── train/  
+│   ├── test/  
+│   └── valid/  
+├── DHAI.ipynb  
+├── main.py  
+├── environment.yml  
+└── README.md  
 
-🖥️ Usage
+---
 
-Launch VS Code from your active Anaconda environment:
+## 🖥️ Usage
+1. Launch VS Code from your active Anaconda environment:  
 
-code .
+    code .  
 
+2. Open the `DHAI.ipynb` notebook.  
+3. Select the **LungCancer_Classification_And_Prediction** kernel.  
+4. Run the notebook cells in order to:
+   - Load the data  
+   - Build the CNN model  
+   - Train the model  
+   - Evaluate performance  
 
-Open the DHAI.ipynb notebook.
+---
 
-Select the LungCancer_Classification_And_Prediction kernel.
+## 📊 Results and Analysis
+- **Training and Validation Accuracy/Loss:** Performance improvement over epochs is tracked.  
+- **Test Set Evaluation:** Provides unbiased accuracy and loss on unseen data.  
+- **Statistical Analysis:** Generates a Confusion Matrix and Classification Report (Precision, Recall, F1-Score) to evaluate predictive capability across all classes.
 
-Run the notebook cells in order to:
+---
 
-Load the data
-
-Build the CNN model
-
-Train the model
-
-Evaluate performance
-
-📊 Results and Analysis
-
-Training and Validation Accuracy/Loss: Performance improvement over epochs is tracked.
-
-Test Set Evaluation: Provides unbiased accuracy and loss on unseen data.
-
-Statistical Analysis: Generates a Confusion Matrix and Classification Report (Precision, Recall, F1-Score) to evaluate predictive capability across all classes.
-
-📜 License
-
-This project is licensed under the MIT License.
+## 📜 License
+This project is licensed under the **MIT License**.
